@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Líder de proyectos",
+    company: "Coppel",
+    description:
+      "Responsable del diseño, renderizado y especificación de mobiliario de oficinas, tiendas y CEDIS. Además de la responsabilidad de revisar la calidad de los prototipos presentados por los fabricantes.",
+    link: "",
+  },
+  {
+    date: "Febrero 2018",
+    title: "Ingeniero de mantenimiento",
+    company: "Loredo Muebles",
+    description:
+      "Responsable del mantenimiento preventivo y correctivo de las herramientas como router CNC, escuadradoras, sierras y otras más para corte de madera.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
